@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang ="es">
+<meta charset="utf-8" />
+<script type="text/javascript">
+		num=parseInt(prompt('introduca un numero'));
+		if(num==1 || num==2)
+		{
+			alert('El numero' + " " +num+" " +'es primo');
+		}
+		else
+		{
+			for(var i=2;i<num;i++){
+				if(num%i==0)
+				{
+					alert('el numero' + " " +num+" " +'no es primo');
+					break;
+				}
+				else
+				{
+					alert('el numero' + " " +num+" " +'es primo');
+					break;
+				}
+			}
+		}
+</script>
+</html>
