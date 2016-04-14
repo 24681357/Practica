@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang ="es">
+<meta charset="utf-8" />
+<script type="text/javascript">
+	var a=parseFloat(prompt('introduca valor de a'));
+	var b=parseFloat(prompt('introduca valor de b'));
+	var c=parseFloat(prompt('introduca valor de c'));
+	var d=(b*b)-(4*a*c);
+	if(d<0)
+		document.write('no tiene solcion real');
+	else
+	{
+		var x1=(-b+Math.sqrt(d))/(2*a);
+		var x2=(-b-Math.sqrt(d))/(2*a);
+		document.write('solucion x1'+" "+x1+'solucion x2'+" "+x2);
+	}
+	
+
+</script>
+</html>
