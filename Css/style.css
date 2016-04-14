@@ -1,0 +1,23 @@
+body{
+	background:  #ffffff;
+	margin: 0 auto;
+	padding: 0%;
+	font-size: 150%;
+	font-family: ARIAL;
+	color: #000004;
+}
+
+#titulo{
+	text-align: center;
+	margin: 0 auto;
+	font-family: ALGERIAN;
+	font-size: 90px;
+	color: #7FFFD4;
+}
+#titulo1{
+	text-align: center;
+	margin: 0 auto;
+	font-family: Snap ITC;
+	font-size: 50px;
+	color: #d33fff;
+}
