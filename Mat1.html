@@ -5,27 +5,37 @@
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<h1 id="titulo"><b>NUMEROS PRIMOS</b></h1>
+<h1 id="titulo1"><b> 100 NUMEROS PRIMOS</b></h1>
 <script type="text/javascript">
-		num=parseInt(prompt('introduca un numero'));
-		if(num==1 || num==2)
-		{
-			alert('El numero' + " " +num+" " +'es primo');
-		}
-		else
-		{
-			for(var i=2;i<num;i++){
-				if(num%i==0)
-				{
-					alert('el numero' + " " +num+" " +'no es primo');
-					break;
-				}
-				else
-				{
-					alert('el numero' + " " +num+" " +'es primo');
-					break;
-				}
+		function primos(num){
+			var ac=0;
+			if(num==1 || num==2 ||num==3)
+			{
+				return 1;
 			}
+			else
+			{
+				for(var i=1;i<=num;i++){
+					if(num%i==0)
+						ac++;
+				}
+				if(ac<=2)
+					return 1;
+				else
+					return 0;
+			}
+		}
+		var k;
+		var i=1;
+		var d=1;
+		while (d<=100)
+		{
+			k=parseInt(primos(i));
+			if(k==1){
+				document.write(i+" ");
+				d++;
+			}
+			i++;
 		}
 </script>
 </body>
